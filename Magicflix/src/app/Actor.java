@@ -1,5 +1,5 @@
 package app;
 
-public class Actor {
+public class Actor extends Persona {
 
 }

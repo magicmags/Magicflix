@@ -10,7 +10,6 @@ public class Contenido {
    public Genero genero;
    public int anio;
    public String descripcion;
-   
    public List<Actor> elenco = new ArrayList<>();
    
 

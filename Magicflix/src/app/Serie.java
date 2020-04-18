@@ -7,5 +7,8 @@ public class Serie extends Contenido {
 
     public List<Temporada> temporada = new ArrayList<>();
     
+   public void getTemporada(){
+
+   }
 
 }

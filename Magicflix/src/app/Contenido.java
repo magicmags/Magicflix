@@ -11,6 +11,11 @@ public class Contenido {
    public int anio;
    public String descripcion;
    public List<Actor> elenco = new ArrayList<>();
-   
+  
+
+  public void buscarSerie(){
+      
+  }
+
 
 }

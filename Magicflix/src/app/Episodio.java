@@ -9,4 +9,7 @@ public class Episodio {
     public List<Episodio> episodios = new ArrayList<>();
     public String descripcion;
 
+    public void getEpisode(){
+        
+    }
 }

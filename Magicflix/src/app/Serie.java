@@ -7,8 +7,15 @@ public class Serie extends Contenido {
 
     public List<Temporada> temporada = new ArrayList<>();
     
-   public void getTemporada(){
+   public Temporada getTemporada(int nro){
+    for (Temporada tempo : this.temporadas) {
+        if (tempo.numero == nro) {
+            return tempo;
+        }
 
+    }
+    
+     return null
    }
 
 }

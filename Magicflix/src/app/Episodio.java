@@ -1,15 +1,14 @@
 package app;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Episodio {
 
-    public int numeroDeEpisodio;
-    public List<Episodio> episodios = new ArrayList<>();
+    public int numero;
+    public String nombre;
     public String descripcion;
-
-    public void getEpisode(){
+    public double duracion;
+    public void reproducir(){
+        System.out.println("Reproduciendo episodio" + this.numero + "" + this.nombre);
         
     }
 }

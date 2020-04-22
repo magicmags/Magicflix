@@ -12,17 +12,17 @@ public class App {
     
             miMagicflix.inicializarCatalogo();
     
-            Serie bb = miMagicflix.buscarSerie("Breaking Bad");
+            Serie community = miMagicflix.buscarSerie("Community");
     
-            Temporada laMejorTemporada = bb.getTemporada(5);
+            Temporada laMejorTemporada = community.getTemporada(1);
     
             Episodio elTop;
     
-            elTop = laMejorTemporada.getEpisodio(7);
+            elTop = laMejorTemporada.getEpisodio(1);
     
             elTop.reproducir();
 
-            elTop = laMejorTemporada.getEpisodio(20);
+            elTop = laMejorTemporada.getEpisodio(2);
 
             elTop.reproducir();
     

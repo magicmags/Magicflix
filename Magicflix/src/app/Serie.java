@@ -8,7 +8,7 @@ public class Serie extends Contenido {
     public List<Temporada> temporada = new ArrayList<>();
     
    public Temporada getTemporada(int nro){
-    for (Temporada tempo : this.temporadas) {
+    for (Temporada tempo : this.temporada) {
         if (tempo.numero == nro) {
             return tempo;
         }

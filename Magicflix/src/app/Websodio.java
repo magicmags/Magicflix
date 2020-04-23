@@ -7,13 +7,13 @@ public class Websodio extends Episodio {
    @Override
    public void reproducir() {
 
-    System.out.println("Reproduciendo websodio "+ this.numero +"" + this.nombre + """url: + this.url);
+    System.out.println("Reproduciendo websodio "+ this.numero +"" + this.nombre + "url: "+ this.url);
     
 }
 public void enviarAlertaDeQueEstaOnline() {
    
     System.out.println("Enviando mail con url " + this.url);
 }
-   }
+   
 
 } 

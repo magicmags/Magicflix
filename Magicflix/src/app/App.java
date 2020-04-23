@@ -41,7 +41,10 @@ public class App {
         epiDemo.reproducir();
         if (epiDemo instanceof Websodio) {
             Websodio webi = (Websodio)epiDemo;
-            webi.enviarAlertaDeQueEstaOnline();
+            webi.enviarAlertaDeQueEstaOnline(); {
+
+                System.out.println("Enviando mail con url " + this.url);
+            }
 
         }
         else {

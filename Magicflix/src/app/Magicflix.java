@@ -50,13 +50,13 @@ public class Magicflix {
 
         Episodio epi = new Episodio();
         epi.numero = 1;
-        epi.nombre = "Community";
+        epi.nombre = " Community";
         epi.duracion = 22;
         t1.episodios.add(epi);
 
         epi = new Episodio();
         epi.numero = 2;
-        epi.nombre = "Spanish 101";
+        epi.nombre = " Spanish 101";
         epi.duracion = 23;
         t1.episodios.add(epi);
 

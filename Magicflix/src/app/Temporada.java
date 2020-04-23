@@ -8,8 +8,6 @@ public class Temporada {
     public List<Episodio> episodios = new ArrayList<>();
     public int numero;
 
-       @param nro
-       @return
     
    public Episodio getEpisodio(int nro) {
 
@@ -17,17 +15,16 @@ public class Temporada {
        for (Episodio epi : this.episodios) {
            if (epi.numero == nro) {
                return epi;
-           }
-
-       }
+           
+        
+            }
+        }
 
        return null;
    }
 
    
-     
-     @param pos
-     @return
+   
     
    public Episodio getEpisodioAtPosicion(int pos) {
        return this.episodios.get(pos);

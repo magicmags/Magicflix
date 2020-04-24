@@ -20,6 +20,7 @@ public class Magicflix {
     public void inicializarCatalogo() {
         this.inicializarCommunity();
         this.inicializarFriends();
+        this.inicializarPelis();
     }
 
     public void inicializarCommunity() {
@@ -137,6 +138,51 @@ public class Magicflix {
         // epi.duracion = 22;
         t2.getEpisodios().add(epi);
     }
+    public void inicializarPelis(){
+        Pelicula peli = new Pelicula("The Shinning",125);
+        Actor actor = new Actor();
+        actor.setNombre("Jack");
+
+        peli.getElenco().add(actor);
+
+        this.peliculas.add(peli);
+
+        peli = new Pelicula("Deadpool", 135);
+        actor = new Actor();
+        actor.setNombre("Ryan");
+
+        peli.getElenco().add(actor);
+
+        this.peliculas.add(peli);
+
+    }
     
+    public List<INominable> nominados = new ArrayList<>();
+
+    public void inicializarListaNominados() {
+
+        for (Pelicula peli : this.peliculas) {
+            this.nominados.add(peli);
+            for (Actor actor : peli.getElenco())
+                this.nominados.add(actor);
+
+        }
+        for (Serie serie : this.series) {
+            for (Actor actor : serie.getElenco())
+                this.nominados.add(actor);
+
+        }
+    }
+
+    public void reproducirTrailersDeNominacion() {
+        for (INominable nominado : nominados) {
+            
+            nominado.reproducirTrailerNominacion();
+        }
+    }
+
+
+    
+
 
 }

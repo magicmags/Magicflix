@@ -49,9 +49,13 @@ public class App {
         }
         else {
             System.out.println("No hay que hacer mas nada con un Episodio");
+
         }
 
+         
+        miMagicflix.inicializarListaNominados();
 
+        miMagicflix.reproducirTrailersDeNominacion();
 
 
         int lala;

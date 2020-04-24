@@ -1,6 +1,8 @@
 package app;
 
-public class Pelicula extends Contenido {
+import java.util.List;
+
+public class Pelicula extends Contenido implements INominable {
 
     private Director director;
 
@@ -22,9 +24,30 @@ public class Pelicula extends Contenido {
         this.duracionEnMinutos = duracionEnMinutos;
     }
 
-    public Pelicula(Director director, int duracionEnMinutos) {
-        this.director = director;
+    public Pelicula(String nombre, int duracionEnMinutos) {
+        this.setNombre(nombre);
         this.duracionEnMinutos = duracionEnMinutos;
 
+    }
+
+    public boolean ganoPreviamente() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    public void reproducirTrailerNominacion() {
+        System.out.println("Reproduciendo trailer");
+
+    }
+
+    public void sacarSelfie(List<Actor> elenco) {
+        // TODO Auto-generated method stub
+
+    }
+
+    
+    public boolean estaNominada() {
+        
+        return false;
     }
 }

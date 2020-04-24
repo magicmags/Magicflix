@@ -22,4 +22,9 @@ public class Pelicula extends Contenido {
         this.duracionEnMinutos = duracionEnMinutos;
     }
 
+    public Pelicula(Director director, int duracionEnMinutos) {
+        this.director = director;
+        this.duracionEnMinutos = duracionEnMinutos;
+
+    }
 }

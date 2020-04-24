@@ -23,8 +23,7 @@ public class Magicflix {
     }
 
     public void inicializarCommunity() {
-        Serie community = new Serie();
-        community.setNombre("Community");
+        Serie community = new Serie("Community", 2009);
         this.series.add(community);
 
         Actor actor1 = new Actor();
@@ -86,8 +85,7 @@ public class Magicflix {
 
     public void inicializarFriends() {
 
-        Serie friends = new Serie();
-        friends.setNombre("Friends");
+        Serie friends = new Serie("Friends", 1998);
         this.series.add(friends);
 
         Actor actor2 = new Actor();
@@ -139,5 +137,6 @@ public class Magicflix {
         // epi.duracion = 22;
         t2.getEpisodios().add(epi);
     }
+    
 
 }

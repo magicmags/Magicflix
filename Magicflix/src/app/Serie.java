@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Serie extends Contenido {
-
+    public Serie(String nombre, int anio){
+        this.setNombre(nombre);
+        this.setAnio(anio);
+    }
+    
     private List<Temporada> temporadas = new ArrayList<>();
 
     public List<Temporada> getTemporadas() {

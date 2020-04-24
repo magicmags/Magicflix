@@ -14,7 +14,13 @@ public class Temporada {
     public void setEpisodios(List<Episodio> episodios) {
         this.episodios = episodios;
     }
-
+    private int anio;
+    public int getAnio(){
+        return this.anio;
+    }
+    public void setAnio(int anio){
+        this.anio = anio;
+    }
     private int numero;
 
     public int getNumero() {

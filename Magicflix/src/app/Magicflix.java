@@ -3,10 +3,15 @@ package app;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.personas.Actor;
+
 public class Magicflix {
 
     public List<Pelicula> peliculas = new ArrayList<>();
     public List<Serie> series = new ArrayList<>();
+    public List<INominable> nominados = new ArrayList<INominable>();
+    
+   
 
     public Serie buscarSerie(String titulo) {
 
@@ -139,17 +144,17 @@ public class Magicflix {
         t2.getEpisodios().add(epi);
     }
     public void inicializarPelis(){
-        Pelicula peli = new Pelicula("The Shinning",125);
+        Pelicula peli = new Pelicula("Pride & Prejudice",125);
         Actor actor = new Actor();
-        actor.setNombre("Jack");
+        actor.setNombre("Keira Knightley");
 
         peli.getElenco().add(actor);
 
         this.peliculas.add(peli);
 
-        peli = new Pelicula("Deadpool", 135);
+        peli = new Pelicula("10 things I hate about you", 135);
         actor = new Actor();
-        actor.setNombre("Ryan");
+        actor.setNombre("Julia Stiles");
 
         peli.getElenco().add(actor);
 
@@ -157,7 +162,6 @@ public class Magicflix {
 
     }
     
-    public List<INominable> nominados = new ArrayList<>();
 
     public void inicializarListaNominados() {
 
@@ -176,12 +180,17 @@ public class Magicflix {
 
     public void reproducirTrailersDeNominacion() {
         for (INominable nominado : nominados) {
-            
+
             nominado.reproducirTrailerNominacion();
+            if (nominado instanceof Actor) {
+                Actor actor = (Actor) nominado;
+
+                actor.decirDiscurso();
+
+            }
         }
     }
-
-
+    
     
 
 

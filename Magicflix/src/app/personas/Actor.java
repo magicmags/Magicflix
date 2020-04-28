@@ -1,6 +1,8 @@
-package app;
+package app.personas;
 
 import java.util.List;
+
+import app.INominable;
 
 public class Actor extends Persona implements INominable {
 
@@ -21,4 +23,11 @@ public class Actor extends Persona implements INominable {
        
         return false;
     }
+    
+    public void decirDiscurso(){
+        System.out.println("Quiero agradecer a mi mami que siempre estuvo ahi");
+    }
+
+
+    
 }
